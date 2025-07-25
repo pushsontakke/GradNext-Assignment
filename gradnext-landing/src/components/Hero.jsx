@@ -1,9 +1,10 @@
 
 const Hero = () => {
-    return (
-        <div className="Hero">
-            Hero section
+    return(
+        <div className="">
+            Hero Component
         </div>
     )
 }
-export default Hero;
+
+export default Hero
