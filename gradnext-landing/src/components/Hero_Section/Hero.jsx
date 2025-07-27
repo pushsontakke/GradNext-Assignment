@@ -11,9 +11,9 @@ const Hero = () => {
                             Making your consulting dream possible.
                         </div>
 
-                        <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                        <div className="text-2xl md:text-3xl font-bold text-gray-900">
                             Elevate your <span className="text-blue-600">consulting</span> preparation.
-                        </h2>
+                        </div>
 
                         <p className="text-base text-gray-600 md:text-lg">
                             Learn from McKinsey, BCG and Bain consultants to set you on the path to success
@@ -36,17 +36,17 @@ const Hero = () => {
                     {/* Program Cards - Same styling for mobile and desktop */}
                     <div className="w-full md:w-1/2 space-y-4">
                         <div className="bg-white p-5 rounded-xl shadow-md">
-                            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">1:1 Coaching Program</h3>
+                            <div className="text-lg md:text-xl font-bold text-gray-900 mb-2">1:1 Coaching Program</div>
                             <p className="text-gray-600 text-sm md:text-base">Tailored program for personalised preparation</p>
                         </div>
 
                         <div className="bg-white p-5 rounded-xl shadow-md">
-                            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">Consulting Cohort 101</h3>
+                            <div className="text-lg md:text-xl font-bold text-gray-900 mb-2">Consulting Cohort 101</div>
                             <p className="text-gray-600 text-sm md:text-base">Consulting foundations with global live-minded peers</p>
                         </div>
 
                         <div className="bg-white p-5 rounded-xl shadow-md">
-                            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">CaseBuddy</h3>
+                            <div className="text-lg md:text-xl font-bold text-gray-900 mb-2">CaseBuddy</div>
                             <p className="text-gray-600 text-sm md:text-base">Self practice cases at your own pace</p>
                         </div>
                     </div>

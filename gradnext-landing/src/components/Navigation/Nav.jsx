@@ -54,7 +54,7 @@ const Navigation = () => {
                 {/* Mobile Header */}
                 <div className="flex items-center justify-between h-14 sm:h-16">
                     {/* Logo */}
-                    <div className="flex-shrink-0 px-4">
+                    <div className="flex-shrink-0 pr-4">
                         <a href="https://www.gradnext.co/">
                             <div className="sm:text-4xl text-2xl font-bold text-slate-800 cursor-pointer">
                                 GradNext
@@ -193,7 +193,7 @@ const Navigation = () => {
                             </div>
 
                             {/* CaseBuddy Button */}
-                            <button className="bg-slate-800 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-slate-700 transition-colors duration-200">
+                            <button className="border border-slate-800 hover:text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-slate-800 transition-colors duration-200">
                                 CaseBuddy
                             </button>
 
@@ -265,7 +265,7 @@ const Navigation = () => {
                             <div className="border-t border-gray-100 py-4 px-4 space-y-3">
                                 {/* CaseBuddy Button - Mobile */}
                                 <button
-                                    className="w-full bg-slate-800 text-white py-3 rounded-md text-base font-medium hover:bg-slate-700 transition-colors duration-200"
+                                    className="w-full border border-slate-800 hover:text-white py-3 rounded-md text-base font-medium hover:bg-slate-800 transition-colors duration-200"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     CaseBuddy
