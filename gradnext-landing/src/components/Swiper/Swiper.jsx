@@ -1,14 +1,7 @@
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import accentureImg from "/accenture.jpeg";
-import alvarezImg from "/Alvarez.jpg";
-import arthurImg from "/arthur.jpg";
-import bainImg from "/bain.jpg";
-import BCGImg from "/BCG.jpg";
-import EYImg from "/EY.jpg";
-import kearneyImg from "/kearney.jpg";
-import mckinseyImg from "/Mckinsey.jpg";
+
 
 // Import Swiper styles
 import 'swiper/css';
@@ -16,7 +9,7 @@ import 'swiper/css/navigation'; // Navigation styles
 import 'swiper/css/pagination'; // Pagination styles
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-const SwiperComponent = () => {
+const SwiperComponent = ({data}) => {
     const swiperRef = useRef(null);
     return (
         <div className="relative"> {/* Container for navigation buttons */}
@@ -34,7 +27,7 @@ const SwiperComponent = () => {
                     swiperRef.current = swiper;
                     // console.log(swiper);
                 }}
-                onSlideChange={() => console.log('slide change')}
+                // onSlideChange={() => console.log('slide change')}
                 breakpoints={{
                     // Responsive breakpoints
                     320: {
@@ -51,14 +44,9 @@ const SwiperComponent = () => {
                     }
                 }}
             >
-                <SwiperSlide><img src={accentureImg} alt="Accenture" className="h-20 object-contain"/></SwiperSlide>
-                <SwiperSlide><img src={alvarezImg} alt="Alvarez & Marsal" className="h-20 object-contain"/></SwiperSlide>
-                <SwiperSlide><img src={arthurImg} alt="Arthur D. Little" className="h-20 object-contain"/></SwiperSlide>
-                <SwiperSlide><img src={bainImg} alt="Bain & Company" className="h-20 object-contain"/></SwiperSlide>
-                <SwiperSlide><img src={BCGImg} alt="Boston Consulting Group" className="h-20 object-contain"/></SwiperSlide>
-                <SwiperSlide><img src={EYImg} alt="EY" className="h-20 object-contain"/></SwiperSlide>
-                <SwiperSlide><img src={kearneyImg} alt="Kearney" className="h-20 object-contain"/></SwiperSlide>
-                <SwiperSlide><img src={mckinseyImg} alt="McKinsey & Company" className="h-20 object-contain"/></SwiperSlide>
+                {data.map((item) => (
+                    <SwiperSlide><img src={item.image} alt="" className="object-contain"/></SwiperSlide>
+                ))}
             </Swiper>
 
             {/* Custom Navigation Buttons */}
